@@ -7,9 +7,9 @@
 
     <title>@yield('title')</title>
 
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    @stack('prepend-style')
+    @include('includes.styles')
+    @stack('addon-style')
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
     <div id="app">
@@ -42,6 +42,27 @@
         </header>
 
         @yield('content')
+
+
+        @stack('prepend-script')
+        @include('includes.script')
+        @stack('addon-script')
     </div>
+
+<script>
+    Swal.fire({
+        title: 'Do you want to save the changes?',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: `Save`,
+        denyButtonText: `Don't Save`,
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire('Saved!', '', 'success')
+        } else if (result.isDenied) {
+            Swal.fire('Changes are not saved', '', 'success')
+        }
+    })
+</script>
 </body>
 </html>
