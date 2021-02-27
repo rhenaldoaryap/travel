@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>@yield('title')</title>
 
     @stack('prepend-style')
@@ -47,22 +47,7 @@
         @stack('prepend-script')
         @include('includes.script')
         @stack('addon-script')
+        @include('sweetalert::alert')
     </div>
-
-<script>
-    Swal.fire({
-        title: 'Do you want to save the changes?',
-        showDenyButton: true,
-        showCancelButton: true,
-        confirmButtonText: `Save`,
-        denyButtonText: `Don't Save`,
-    }).then((result) => {
-        if (result.isConfirmed) {
-            Swal.fire('Saved!', '', 'success')
-        } else if (result.isDenied) {
-            Swal.fire('Changes are not saved', '', 'success')
-        }
-    })
-</script>
 </body>
 </html>

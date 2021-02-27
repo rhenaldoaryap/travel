@@ -21,15 +21,16 @@
 
                 <div class="w-full flex flex-wrap text-gray-700 leading-normal text-sm p-6 space-y-4 sm:text-base sm:space-y-6">
                     <p>
-                        Before proceeding, please check your email for a verification link.
-                        or you will not be able to access other page(s).
+                        Before proceeding, please check your email for a verification link,
+                        or you will not be able to access other page(s),
                         Thank you.
                     </p>
 
                     <p>
-                        If you did not receive the email, check at your spam folder might be our email at there, <a
+                        If you did not receive the email, <a
                             class="text-blue-500 hover:text-blue-700 no-underline hover:underline cursor-pointer"
                             onclick="event.preventDefault(); document.getElementById('resend-verification-form').submit();">{{ __('click here to request another') }}</a>.
+                        or check at your spam folder might be our email at there.
                     </p>
 
                     <form id="resend-verification-form" method="POST" action="{{ route('verification.resend') }}"
