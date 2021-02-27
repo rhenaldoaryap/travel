@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Email')
+@section('title', 'Reset Password')
 
 @section('content')
 <main class="sm:container sm:mx-auto sm:max-w-lg sm:mt-10">
@@ -28,7 +28,7 @@
                         </label>
 
                         <input id="email" type="email"
-                            class="form-input w-full @error('email') border-red-500 @enderror" name="email"
+                            class="border form-input w-full @error('email') border-red-500 @enderror" name="email"
                             value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                         @error('email')

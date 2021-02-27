@@ -25,7 +25,7 @@
                         </label>
 
                         <input id="password" type="password"
-                            class="form-input w-full @error('password') border-red-500 @enderror" name="password"
+                            class="border form-input w-full @error('password') border-red-500 @enderror" name="password"
                             required autocomplete="new-password">
 
                         @error('password')

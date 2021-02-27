@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\HomeController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Auth\Events\Registered;
+use App\Http\Controllers\HomeController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
-use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +27,7 @@ Auth::routes(['verify' => true]);
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('/email/verify', function () {
-    return view('auth.verify-email');
+    return view('auth.verify');
 })->middleware('auth')->name('verification.notice');
 
 Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
