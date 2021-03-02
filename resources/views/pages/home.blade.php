@@ -3,8 +3,43 @@
 @section('title', 'Travel')
 
 @section('content')
+<div class="relative overflow-hidden">
+    <div class="relative z-0 pb-8 bg-white sm:py-10 md:pb-10 lg:max-w-3xl lg:w-full lg:pb-10 xl:pb-32">
+        <div class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+            <div class="sm:text-center lg:text-left">
+                <h1 class="text-center lg:text-left text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+                    Forget Work
+                    <br class="sm:hidden">
+                    <span class="text-red-500">get vacation!</span>
+                </h1>
+                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                    Give reward for your self, you have been working so hard it's time to get break and enjoy vacation.
+                    <br>
+                    <br>
+                    Just sit tight, tell us where you want to vacation, we will create for you!
+                </p>
+                <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                    <div class="rounded-md shadow">
+                        <a href="{{ url('register') }}" class="transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110 w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white focus:outline-none focus:shadow-outline md:py-4 md:text-lg md:px-10">
+                            Get started
+                        </a>
+                    </div>
+                    <div class="mt-3 sm:mt-0 sm:ml-3">
+                        <a href="#price" class="w-full flex items-center justify-center py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-500 focus:outline-none focus:shadow-outline focus:border-indigo-300 md:py-4 md:text-lg md:px-10">
+                            Check Price
+                            <svg class="animate-bounce w-6 h-6" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <img class="h-56 w-full object-cover sm:h-full md:h-full lg:h-full rounded-lg" src="{{ asset('images/hero.jpg') }}" alt="hero">
+    </div>
+</div>
 <section class="text-gray-700">
-    <div class="border border-black flex flex-col items-center px-5 mt-10 mx-auto lg:px-8 lg:py-10 lg:mt-20 md:flex-row bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+    <div class="border border-black flex flex-col items-center px-5 mt-10 mx-auto lg:px-8 lg:py-5 lg:mt-20 md:flex-row bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
         <div class="w-5/6 my-10 lg:max-w-lg lg:w-full md:w-1/2 md:mb-0">
             <img class="object-cover object-center rounded-md" alt="hero" src="{{ asset('images/team.png') }}">
         </div>
@@ -225,7 +260,7 @@
     </div>
     <div class="flex flex-col lg:flex-row items-start px-20">
         <a href="#">
-            <h4 class="inline-flex items-center font-h1 text-bold text-2xl bg-green-500 px-5 py-2 rounded-md text-white">
+            <h4 class="inline-flex items-center font-h1 text-bold text-2xl bg-green-500 px-5 py-2 rounded-md text-white" id="price">
                 Cheapest
                 <svg class="ml-2 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd">
@@ -470,12 +505,12 @@
             </div>
             <div class="mt-5 lg:mt-0 text-black">
                 <div class="px-5 lg:px-20 flex flex-row">
-                    <a href="#">
+                    <a href="{{ url('register') }}">
                         <h4 class="font-h1 text-2xl bg-orange-300 hover:bg-orange-500 rounded-full px-3 py-3 mr-5">
                             Register
                         </h4>
                     </a>
-                    <a href="#">
+                    <a href="{{ url('login') }}">
                         <h4 class="font-h1 text-2xl rounded-full px-3 py-3 text-center bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
                             Login
                         </h4>
