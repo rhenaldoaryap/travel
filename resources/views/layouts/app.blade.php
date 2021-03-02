@@ -14,6 +14,7 @@
 <body>
     @include('includes.navbar')
     @yield('content')
+    @include('includes.footer')
 
     @stack('prepend-script')
     @include('includes.script')

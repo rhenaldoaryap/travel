@@ -111,10 +111,11 @@
                 <div class="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4">
                     <div class="flex flex-col items-center p-4 mb-6 text-center md:w-1/2 md:mb-0 lg:text-left lg:items-start bg-blue-500 rounded-md">
                         <div class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-5 text-blue-800 bg-gray-200 rounded-full">
-                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
-                                height="18" fill="currentColor">
-                                <path fill="none" d="M0 0h24v24H0z" />
-                                <path d="M14 10h-4v4h4v-4zm2 0v4h3v-4h-3zm-2 9v-3h-4v3h4zm2 0h3v-3h-3v3zM14 5h-4v3h4V5zm2 0v3h3V5h-3zm-8 5H5v4h3v-4zm0 9v-3H5v3h3zM8 5H5v3h3V5zM4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" />
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z">
+                                </path>
+                                <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z">
+                                </path>
                             </svg>
                         </div>
                         <div class="flex-grow">
@@ -139,9 +140,9 @@
                     </div>
                     <div class="flex flex-col items-center p-4 mb-6 text-center md:w-1/2 md:mb-0 lg:text-left lg:items-start shadow-2xl">
                         <div class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-5 text-blue-800 bg-gray-200 rounded-full">
-                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                                <path fill="none" d="M0 0h24v24H0z" />
-                                <path d="M21 3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h18zM11 13H4v6h7v-6zm9 0h-7v6h7v-6zm-9-8H4v6h7V5zm9 0h-7v6h7V5z" />
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd">
+                                </path>
                             </svg>
                         </div>
                         <div class="flex-grow">
@@ -167,7 +168,319 @@
                 </div>
             </div>
             <div class="w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
-                <img class="object-cover object-center rounded-lg " alt="pict2" src="https://dummyimage.com/720x600/F3F4F7/8693ac">
+                <img class="object-cover object-center rounded-lg " alt="pict2" src="{{ asset('images/package.jpg') }}">
+            </div>
+        </div>
+    </div>
+    <div class="relative text-center font-h1 my-5 bg-gray-300 py-3 px-6 rounded-3xl">
+        <h3 class="text-4xl">What they said about us?</h3>
+        <div class="text-black">
+            <div class="container px-8 mx-auto py-2 lg:px-4">
+                <div class="flex flex-wrap -m-4">
+                    <div class="p-8 mx-auto mb-6 lg:w-1/3 lg:mb-0">
+                        <div class="h-full p-4 text-justify border rounded-xl">
+                            <p class="text-base font-medium leading-relaxed">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid facere dolorem deserunt provident nostrum, nihil aliquam laboriosam cumque, hic eveniet? Ipsum placeat, eius qui cum deleniti explicabo molestias optio."
+                            </p>
+                            <span class="flex flex-col flex-grow text-center items-center">
+                                <a class="mt-6">
+                                    <img alt="testimonial" class="inline-block object-cover object-center w-16 h-16 mb-4 rounded-full " src="{{ asset('images/cust1.jpg') }}">
+                                </a>
+                                <span class="font-medium text-gray-900">Gabriel Svensson</span>
+                                <span class="text-sm uppercase">Country Manager</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-8 mx-auto mb-6 lg:w-1/3 lg:mb-0">
+                        <div class="h-full p-4 text-left border rounded-xl">
+                            <p class="text-base font-medium leading-relaxed">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis labore dolore necessitatibus, eligendi earum atque? Laudantium nulla aperiam suscipit facilis perferendis. Magnam natus nihil nisi quod obcaecati accusamus itaque fugit."
+                            </p>
+                            <span class="flex flex-col flex-grow text-center items-center">
+                                <a class="mt-6">
+                                    <img alt="testimonial" class="inline-block object-cover object-center w-16 h-16 mb-4 rounded-full " src="{{ asset('images/cust2.png') }}">
+                                </a>
+                                <span class="font-medium text-gray-900">Earlee Joshua</span>
+                                <span class="text-sm uppercase">Head of Marketing JL Inc.</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-8 mx-auto mb-6 lg:w-1/3 lg:mb-0">
+                        <div class="h-full p-4 text-left border rounded-xl">
+                            <p class="text-base font-medium leading-relaxed">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores laborum quam similique fuga distinctio aliquam illo voluptatem architecto eaque minus ut totam rem consequatur quia molestiae, laudantium, adipisci maxime."
+                            </p>
+                            <span class="flex flex-col flex-grow text-center items-center">
+                            <a class="mt-6">
+                                <img alt="testimonial" class="inline-block object-cover object-center w-16 h-16 mb-4 rounded-full" src="{{ asset('images/cust3.jpg') }}">
+                            </a>
+                                <span class="font-medium text-gray-900">Shivaz Shamoon</span>
+                                <span class="text-sm uppercase">CEO MG Group</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col lg:flex-row items-start px-20">
+        <a href="#">
+            <h4 class="inline-flex items-center font-h1 text-bold text-2xl bg-green-500 px-5 py-2 rounded-md text-white">
+                Cheapest
+                <svg class="ml-2 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd">
+                    </path>
+                </svg>
+            </h4>
+        </a>
+    </div>
+    <div class="text-gray-700">
+        <div class="container px-8 pt-2 mx-auto">
+            <div class="flex flex-wrap ">
+                <div class="px-2 py-2 lg:w-1/3 md:w-full">
+                    <a href="#">
+                        <div class="border rounded-xl">
+                            <img class="object-cover object-center w-full mb-2 h-52 rounded-t-xl"
+                                src="{{ asset('images/cheap1.jpg') }}" alt="content">
+                            <div class="p-6 ">
+                                <h2
+                                    class="flex items-baseline justify-start mb-4 text-3xl font-bold leading-none text-left text-black lg:text-6xl">
+                                    Rp. 250K
+                                    <span class="ml-1 text-base text-gray-600">/person</span>
+                                </h2>
+                                <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl">
+                                    Explore Holy Temple
+                                </h2>
+                                <p class="mb-4 text-base leading-relaxed">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit eaque dolor sapiente rerum neque itaque? Alias at, harum ut pariatur quos, iure facilis maiores cum ratione sapiente enim autem eaque.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="px-2 py-2 lg:w-1/3 md:w-full">
+                    <a href="#">
+                        <div class="animate-pulse border border-black rounded-xl">
+                            <img class="object-cover object-center w-full mb-2 h-52 rounded-t-xl"
+                                src="{{ asset('images/cheap2.png') }}" alt="content">
+                            <div class="p-6 ">
+                                <h2
+                                    class="flex items-baseline justify-start mb-4 text-3xl font-bold leading-none text-left text-black lg:text-6xl">
+                                    Rp. 200K
+                                    <span class="ml-1 text-base text-gray-600">/person</span>
+                                </h2>
+                                <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl">
+                                    Semeru Hiking
+                                </h2>
+                                <p class="mb-4 text-base leading-relaxed">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto ipsam eaque illo saepe deserunt officia quidem consequatur ab, doloremque ullam nobis reiciendis nisi inventore labore nostrum beatae obcaecati eos.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="px-2 py-2 lg:w-1/3 md:w-full">
+                    <a href="#">
+                        <div class="border rounded-xl">
+                            <img class="object-cover object-center w-full mb-2 h-52 rounded-t-xl"
+                                src="{{ asset('images/cheap3.png') }}" alt="content">
+                            <div class="p-6 ">
+                                <h2 class="flex items-baseline justify-start mb-4 text-3xl font-bold leading-none text-left text-black lg:text-6xl">
+                                    Rp. 150K
+                                    <span class="ml-1 text-base text-gray-600">/person</span>
+                                </h2>
+                                <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl">
+                                    Jakarta City Tour
+                                </h2>
+                                <p class="mb-4 text-base leading-relaxed">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, aut ullam cumque nisi reiciendis quo debitis optio, fugiat, ratione eius earum vitae eos nam. Quas similique culpa est dolor praesentium.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col lg:flex-row items-start px-20 mt-10">
+        <a href="#">
+            <h4 class="inline-flex items-center font-h1 text-bold text-2xl bg-green-500 px-5 py-2 rounded-md text-white">
+                Luxurious
+                <svg class="ml-2 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd">
+                    </path>
+                </svg>
+            </h4>
+        </a>
+    </div>
+    <div class="text-gray-700">
+        <div class="container px-8 pt-2 mx-auto">
+            <div class="flex flex-wrap ">
+                <div class="px-2 py-2 lg:w-1/3 md:w-full">
+                    <a href="#">
+                        <div class="border rounded-xl">
+                            <img class="object-cover object-center w-full mb-2 h-52 rounded-t-xl"
+                                src="{{ asset('images/lux1.jpg') }}" alt="content">
+                            <div class="p-6 ">
+                                <h2
+                                    class="flex items-baseline justify-start mb-4 text-3xl font-bold leading-none text-left text-black lg:text-6xl">
+                                    Rp. 30000K
+                                    <span class="ml-1 text-base text-gray-600">/person</span>
+                                </h2>
+                                <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl">
+                                    Veligandu Island Resort & Spa, Veligandu Island, Maldives
+                                </h2>
+                                <p class="mb-4 text-base leading-relaxed">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus autem dignissimos nam repellendus similique dolores ab saepe doloribus, dolore ad pariatur aspernatur recusandae, enim accusamus nobis impedit. Iure, fugit sunt.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="px-2 py-2 lg:w-1/3 md:w-full">
+                    <a href="#">
+                        <div class="border rounded-xl">
+                            <img class="object-cover object-center w-full mb-2 h-52 rounded-t-xl"
+                                src="{{ asset('images/lux2.jpg') }}" alt="content">
+                            <div class="p-6 ">
+                                <h2
+                                    class="flex items-baseline justify-start mb-4 text-3xl font-bold leading-none text-left text-black lg:text-6xl">
+                                    Rp. 35000K
+                                    <span class="ml-1 text-base text-gray-600">/person</span>
+                                </h2>
+                                <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl">
+                                    Arc de Triomphe, Paris, France
+                                </h2>
+                                <p class="mb-4 text-base leading-relaxed">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, sit at voluptatibus exercitationem cumque voluptas? Et voluptatibus voluptates nemo magni fuga atque odit. Ea quaerat sit molestias placeat id nostrum?
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="px-2 py-2 lg:w-1/3 md:w-full">
+                    <a href="#">
+                        <div class="border rounded-xl bg-gradient-to-br from-yellow-300 via-orange-500 to-white">
+                            <img class="object-cover object-center w-full mb-2 h-52 rounded-t-xl"
+                                src="{{ asset('images/lux3.jpg') }}" alt="content">
+                            <div class="p-6">
+                                <h2 class="flex items-baseline justify-start mb-4 text-3xl font-bold leading-none text-left text-black lg:text-6xl">
+                                    Rp. 50000K
+                                    <span class="ml-1 text-base text-black">/person</span>
+                                </h2>
+                                <h2 class="mb-3 text-lg font-semibold text-black lg:text-2xl">
+                                    Rokers Point Settlement, Exuma, The Bahamas
+                                </h2>
+                                <p class="mb-4 text-base leading-relaxed text-black">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ab ullam nobis minima iure eligendi eum dignissimos, earum sit magni blanditiis itaque sequi. Dolorum, assumenda quisquam! Sed maiores et dolore?
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col lg:flex-row items-start px-20 mt-10">
+        <a href="#">
+            <h4 class="inline-flex items-center font-h1 text-bold text-2xl bg-green-500 px-5 py-2 rounded-md text-white">
+                Nature
+                <svg class="ml-2 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd">
+                    </path>
+                </svg>
+            </h4>
+        </a>
+    </div>
+    <div class="text-gray-700">
+        <div class="container px-8 pt-2 mx-auto">
+            <div class="flex flex-wrap ">
+                <div class="px-2 py-2 lg:w-1/3 md:w-full">
+                    <a href="#">
+                        <div class="border rounded-xl">
+                            <img class="object-cover object-center w-full mb-2 h-52 rounded-t-xl"
+                                src="{{ asset('images/nature1.jpg') }}" alt="content">
+                            <div class="p-6 ">
+                                <h2 class="flex items-baseline justify-start mb-4 text-xl font-bold leading-none text-left text-black lg:text-6xl">
+                                    Rp. 8500k
+                                    <span class="ml-1 text-base text-gray-600">/person</span>
+                                </h2>
+                                <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl">
+                                    Horseshoe Bend Parking, Page, United States
+                                </h2>
+                                <p class="mb-4 text-base leading-relaxed">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veniam officia quaerat dolorum provident alias, doloribus cumque eveniet labore quibusdam, ut repudiandae, in accusantium?
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="px-2 py-2 lg:w-1/3 md:w-full">
+                    <a href="#">
+                        <div class="border rounded-xl bg-gradient-to-bl from-green-500 via-teal-400 to-yellow-300">
+                            <img class="object-cover object-center w-full mb-2 h-52 rounded-t-xl"
+                                src="{{ asset('images/nature2.jpg') }}" alt="content">
+                            <div class="p-6 ">
+                                <h2 class="flex items-baseline justify-start mb-4 text-3xl font-bold leading-none text-left text-black lg:text-6xl">
+                                    Rp. 9000k
+                                    <span class="ml-1 text-base text-black">/person</span>
+                                </h2>
+                                <h2 class="mb-3 text-lg font-semibold text-black lg:text-2xl">
+                                    Obernberger See, Obernberg am Brenner, Austria
+                                </h2>
+                                <p class="mb-4 text-base leading-relaxed text-black">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut non, officia quia molestias sed, maxime doloremque commodi voluptate eius accusantium aliquid est qui dignissimos repellat impedit illum, nisi quidem facilis!
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="px-2 py-2 lg:w-1/3 md:w-full">
+                    <a href="#">
+                        <div class="border rounded-xl">
+                            <img class="object-cover object-center w-full mb-2 h-52 rounded-t-xl"
+                                src="{{ asset('images/nature3.jpg') }}" alt="content">
+                            <div class="p-6 ">
+                                <h2
+                                    class="flex items-baseline justify-start mb-4 text-3xl font-bold leading-none text-left text-black lg:text-6xl">
+                                    Rp. 8000k
+                                    <span class="ml-1 text-base text-gray-600">/person</span>
+                                </h2>
+                                <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl">
+                                    BLago di Braies, Italy
+                                </h2>
+                                <p class="mb-4 text-base leading-relaxed">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente libero ea fuga saepe velit eveniet deleniti, dolor magni laudantium delectus ad harum ducimus molestias error aspernatur! Laboriosam voluptatibus similique fuga.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="px-20">
+        <div class="flex flex-col lg:flex-row justify-between bg-gradient-to-tr from-green-400 via-white to-yellow-300 rounded-md my-10 py-10 items-center">
+            <div class="px-5 lg:px-20">
+                <h4 class="font-h1 text-2xl text-black">
+                    Start Scheduling
+                    <br>
+                    <span class="font-bold text-red-500">your trip.</span>
+                </h4>
+            </div>
+            <div class="mt-5 lg:mt-0 text-black">
+                <div class="px-5 lg:px-20 flex flex-row">
+                    <a href="#">
+                        <h4 class="font-h1 text-2xl bg-orange-300 hover:bg-orange-500 rounded-full px-3 py-3 mr-5">
+                            Register
+                        </h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="font-h1 text-2xl rounded-full px-3 py-3 text-center bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
+                            Login
+                        </h4>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
